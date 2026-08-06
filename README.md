@@ -23,7 +23,7 @@ My current engineering focus is **AI Agent and LLM application development**, es
 
 ### Experiment-Centric Research Agent Runtime
 
-> Repository: replace with the project repository URL
+> Repository: https://github.com/Air000000/LabPilot
 
 An experiment-driven Research Agent Runtime for computational research workflows.
 
@@ -38,7 +38,7 @@ Current progress includes the overall architecture, V1 scope, core domain model,
 
 ### Enterprise Support AI Copilot
 
-> Repository: replace with the project repository URL
+> Repository: https://github.com/Air000000/Enterprise-Support-AI-Copilot-API
 
 A RAG-based ticketing Agent engineering prototype for enterprise IT support.
 
@@ -77,15 +77,6 @@ It helps coding agents convert resolved development errors into structured notes
 
 `Agent Workflow` `AI Coding` `Developer Tools` `Knowledge Management`
 
-## Earlier Project
-
-### [AI Todo Assistant / RAG Learning Lab](https://github.com/Air000000/fastapi-todo-api/tree/learn-rag)
-
-An earlier FastAPI-based learning project combining Todo CRUD, natural-language task extraction, and a local-document RAG pipeline.
-
-It includes Markdown document loading, chunking, embedding retrieval, ChromaDB, source-aware RAG answers, and basic retrieval evaluation.
-
-`Python` `FastAPI` `RAG` `ChromaDB` `SQLite` `DashScope`
 
 ## Engineering Areas
 
