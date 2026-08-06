@@ -21,9 +21,7 @@ My current engineering focus is **AI Agent and LLM application development**, es
 
 ## Featured Projects
 
-### Experiment-Centric Research Agent Runtime
-
-> Repository: https://github.com/Air000000/LabPilot
+### [Experiment-Centric Research Agent Runtime](https://github.com/Air000000/LabPilot)
 
 An experiment-driven Research Agent Runtime for computational research workflows.
 
@@ -36,9 +34,7 @@ Current progress includes the overall architecture, V1 scope, core domain model,
 
 ---
 
-### Enterprise Support AI Copilot
-
-> Repository: https://github.com/Air000000/Enterprise-Support-AI-Copilot-API
+### [Enterprise Support AI Copilot](https://github.com/Air000000/Enterprise-Support-AI-Copilot-API)
 
 A RAG-based ticketing Agent engineering prototype for enterprise IT support.
 
