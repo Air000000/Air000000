@@ -75,13 +75,13 @@ It supports session discovery, metadata repair, automatic backups, rollback, and
 
 ---
 
-### [Dev Error Notebook Skill](https://github.com/Air000000/dev-error-notebook-skill)
+### [Bilibili Content](https://github.com/Air000000/bilibili-content)
 
-A reusable engineering memory workflow for coding agents.
+A reusable CLI tool and AI Skill for extracting, validating, transcribing, and organizing Bilibili video content.
 
-It helps coding agents convert resolved development errors into structured notes, so similar problems can be recognized and handled more consistently in later tasks.
+It prefers official subtitles when available, detects suspicious or missing subtitles, can fall back to Whisper after confirmation, and outputs transcript text plus structured metadata for downstream AI summarization and analysis.
 
-`Agent Workflow` `AI Coding` `Developer Tools` `Knowledge Management`
+`Python` `AI Skill` `Bilibili API` `Whisper` `ffmpeg` `Structured Output`
 
 
 ## Engineering Areas
