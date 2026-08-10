@@ -55,6 +55,16 @@ Key features include:
 
 ---
 
+### [TimePrism](https://github.com/Air000000/timeprism)
+
+A local-first Windows desktop app for understanding computer usage, work-rest rhythm, reminders, and focus signals.
+
+It automatically tracks foreground applications, applies local classification and privacy rules, stores usage data in SQLite, and provides daily insights, idle review, reminders, and a lightweight desktop companion.
+
+`Tauri` `Vue 3` `TypeScript` `Rust` `SQLite` `Local-first`
+
+---
+
 ### [Codex History Restorer](https://github.com/Air000000/codex-history-restorer)
 
 A local Windows tool for restoring Codex Desktop conversations that still exist on disk but no longer appear in the application.
@@ -79,6 +89,7 @@ It helps coding agents convert resolved development errors into structured notes
 - **Backend:** Python, FastAPI, asyncio, SQLAlchemy, PostgreSQL, SQLite
 - **Agent Systems:** Context Engineering, Tool / Function Calling, controlled execution, state and workflow orchestration
 - **LLM Applications:** RAG, document lifecycle, source attribution, retrieval logging
+- **Desktop & Product Engineering:** Tauri, Vue 3, TypeScript, Rust, SQLite
 - **Engineering:** Pytest, Alembic, GitHub Actions, Docker Compose, Ruff, mypy
 - **Research:** causal discovery, causal representation learning, generative models, counterfactual image generation
 
@@ -95,6 +106,9 @@ I have submitted a first-author manuscript to *Neurocomputing*.
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="38" alt="FastAPI"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="38" alt="PostgreSQL"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="38" alt="SQLite"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="38" alt="Vue"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="38" alt="TypeScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="38" alt="Rust"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="38" alt="Docker"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="38" alt="PyTorch"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="38" alt="Git"/>
