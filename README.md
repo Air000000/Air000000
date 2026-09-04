@@ -1,120 +1,78 @@
-# Hi, I'm Air 👋
+<div align="center">
 
-I am an M.S. candidate in Communication Engineering, working on causal structure learning and generative models.
+# 李宗宽 / Air
 
-My current engineering focus is **AI Agent and LLM application development**, especially context engineering, tool execution, workflow orchestration, long-running task reliability, and observable AI systems.
+**AI Agent & LLM Application Engineer · M.S. Candidate**
+
+Building controllable, recoverable, and evaluable AI Agent systems.  
+Focused on **Agent Runtime / Harness, RAG evaluation, Context Engineering, and reliable backend systems**.
 
 <p>
-  <img src="https://img.shields.io/badge/Focus-Agent%20Systems-4A78D0"/>
-  <img src="https://img.shields.io/badge/Focus-LLM%20Applications-2E8B57"/>
-  <img src="https://img.shields.io/badge/Backend-Python%20%2F%20FastAPI-009688"/>
-  <img src="https://img.shields.io/badge/Research-Causal%20Learning-7B61A8"/>
+  <img src="https://img.shields.io/badge/Open%20to-2027%20Graduate%20Roles-4A78D0" alt="Open to 2027 Graduate Roles" />
+  <a href="mailto:1113476369@qq.com"><img src="https://img.shields.io/badge/Email-1113476369%40qq.com-2E8B57" alt="Email" /></a>
 </p>
 
-## Current Focus
+</div>
 
-- Building reliable backends for AI Agent applications
-- Context engineering and tool-based agent workflows
-- Persistent state, approval flows, recovery, and result validation
-- RAG systems with document lifecycle and retrieval observability
-- Causal structure learning for generative and visual models
+## Engineering Highlights
+
+- **Agent Runtime / Harness** — bounded Agent Loop, versioned Tool Contracts, persist-before-execute, experiment governance, crash reconciliation, cancellation, and deterministic result validation.
+- **RAG Evaluation** — frozen TechQA benchmark with **28,481 documents / 610 answerable queries**; Dense Top-100 + rerank improved held-out Recall@5 from **64.4% → 72.5% (+8.1pp)** and MRR@10 from **0.519 → 0.561**.
+- **Backend Engineering** — Python / FastAPI / PostgreSQL, async workflows, state machines, database migrations, automated tests, CI, and reproducible local environments.
 
 ## Featured Projects
 
-### [Experiment-Centric Research Agent Runtime](https://github.com/Air000000/LabPilot)
+### 1. [LabPilot — AI Agent Runtime / Harness](https://github.com/Air000000/LabPilot)
 
-An experiment-driven Research Agent Runtime for computational research workflows.
+A controllable, recoverable, and verifiable runtime for machine-learning experiments. It separates Agent decisions, human approval, physical execution, recovery, and deterministic result validation instead of letting an LLM directly control long-running training jobs.
 
-The system is designed around codebase understanding, experiment planning and approval, persistent workflow state, long-running execution, failure recovery, and result validation.
+**Engineering evidence:** fault-injection validation showed that a Coordinator restart could reconcile the original training Attempt **without a second physical launch**, with explicit cancellation paths for running and pre-launch work.
 
-Current progress includes the overall architecture, V1 scope, core domain model, versioned research context, controlled tool execution, and reliable task orchestration design.
-
-`Python` `asyncio` `FastAPI` `SQLAlchemy 2.0` `PostgreSQL` `Alembic`  
-`Context Engineering` `Tool Calling` `Workflow Orchestration` `Agent Runtime`
+`Python` `FastAPI` `PostgreSQL` `asyncio` `Agent Runtime` `Context Engineering` `Tool Calling` `SSE`
 
 ---
 
-### [Enterprise Support AI Copilot](https://github.com/Air000000/Enterprise-Support-AI-Copilot-API)
+### 2. [Enterprise Support AI Copilot — RAG + Controlled Ticket Agent](https://github.com/Air000000/Enterprise-Support-AI-Copilot-API)
 
-A RAG-based ticketing Agent engineering prototype for enterprise IT support.
+An enterprise IT support backend combining document lifecycle management, RAG, controlled ticket creation, Human-in-the-loop approval, AgentOps tracing, and an offline evaluation pipeline.
 
-It connects document ingestion, manual indexing, retrieval, ticket classification, approval-based ticket creation, and Agent execution auditing into an end-to-end workflow.
+**Held-out DEV:** Dense Top-100 + `qwen3-rerank` improved Recall@5 from **64.4% → 72.5% (+8.1pp)** and MRR@10 from **0.519 → 0.561** on a frozen TechQA benchmark.
 
-Key features include:
-
-- Document upload, indexing, retrieval, and deletion lifecycle
-- RAG answers with source attribution and low-relevance rejection
-- Knowledge search, ticket classification, and ticket creation tools
-- Preview-confirm execution flow for controlled write operations
-- Approval-state and server-side draft consistency validation
-- Structured logs for Agent runs, tool calls, approvals, and retrieval
-- Automated tests, GitHub Actions, Alembic, and Docker Compose
-
-`Python` `FastAPI` `SQLAlchemy` `SQLite` `ChromaDB`  
-`RAG` `Tool Calling` `Agent Observability` `Docker Compose`
+`Python` `FastAPI` `SQLAlchemy` `ChromaDB` `RAG` `Rerank` `AgentOps` `Pytest`
 
 ---
 
-### [TimePrism](https://github.com/Air000000/timeprism)
+### 3. [TimePrism — Local-first Desktop Productivity App](https://github.com/Air000000/timeprism)
 
-A local-first Windows desktop app for understanding computer usage, work-rest rhythm, reminders, and focus signals.
-
-It automatically tracks foreground applications, applies local classification and privacy rules, stores usage data in SQLite, and provides daily insights, idle review, reminders, and a lightweight desktop companion.
+A Windows-first local desktop app for understanding computer usage, work-rest rhythm, reminders, and focus signals. It captures foreground-app activity, applies privacy processing and local classification rules, stores data in SQLite, and provides review workflows and desktop-companion surfaces.
 
 `Tauri` `Vue 3` `TypeScript` `Rust` `SQLite` `Local-first`
 
 ---
 
-### [Codex History Restorer](https://github.com/Air000000/codex-history-restorer)
+### 4. [CausalLift — BenchFlow / SkillsBench Agent Skill Evaluation](https://github.com/Air000000/causallift)
 
-A local Windows tool for restoring Codex Desktop conversations that still exist on disk but no longer appear in the application.
+A leakage-controlled Agent Skill optimization and evaluation pipeline designed to distinguish reusable Skill improvements from public-task overfitting.
 
-It supports session discovery, metadata repair, automatic backups, rollback, and a GUI workflow for Windows users.
+**Evaluation design:** frozen **60 / 17 / 10 Dev–Holdout–Final-Blind split**, explicit `no_skill` vs `with_skill` paired runs, execution provenance, regression gates, and generalization checks.
 
-`PowerShell` `WinForms` `SQLite` `JSONL` `Local-first` `Developer Tools`
+`Python` `Agent Skills` `BenchFlow` `SkillsBench` `Agent Evaluation` `Docker`
 
----
+## Other Projects
 
-### [Bilibili Content](https://github.com/Air000000/bilibili-content)
+- **[Codex History Restorer](https://github.com/Air000000/codex-history-restorer)** — local Windows tool for recovering Codex Desktop conversations that still exist on disk but no longer appear in the application.
+- **[Bilibili Content](https://github.com/Air000000/bilibili-content)** — reusable CLI tool and AI Skill for subtitle extraction, validation, transcription, and structured downstream processing.
 
-A reusable CLI tool and AI Skill for extracting, validating, transcribing, and organizing Bilibili video content.
+## Tech Stack
 
-It prefers official subtitles when available, detects suspicious or missing subtitles, can fall back to Whisper after confirmation, and outputs transcript text plus structured metadata for downstream AI summarization and analysis.
+- **Agent / LLM:** Context Engineering · Tool / Function Calling · Human-in-the-loop · RAG · Retrieval / Rerank · Agent Evaluation
+- **Backend:** Python · FastAPI · asyncio · SQLAlchemy · PostgreSQL · SQLite
+- **Engineering:** Pytest · Alembic · GitHub Actions · Docker Compose · Git · Linux / Shell · Ruff · mypy
+- **Product / Desktop:** TypeScript · Vue 3 · Rust · Tauri
+- **Research:** PyTorch · causal discovery · causal representation learning · generative models · counterfactual generation
 
-`Python` `AI Skill` `Bilibili API` `Whisper` `ffmpeg` `Structured Output`
+## Research
 
+M.S. candidate in Communication Engineering, researching causal structure learning for diffusion-based generative models, including causal discovery, causal representation learning, and counterfactual image generation.
 
-## Engineering Areas
-
-- **Backend:** Python, FastAPI, asyncio, SQLAlchemy, PostgreSQL, SQLite
-- **Agent Systems:** Context Engineering, Tool / Function Calling, controlled execution, state and workflow orchestration
-- **LLM Applications:** RAG, document lifecycle, source attribution, retrieval logging
-- **Desktop & Product Engineering:** Tauri, Vue 3, TypeScript, Rust, SQLite
-- **Engineering:** Pytest, Alembic, GitHub Actions, Docker Compose, Ruff, mypy
-- **Research:** causal discovery, causal representation learning, generative models, counterfactual image generation
-
-## Research Background
-
-My research focuses on causal structure learning for diffusion-based generative models, including causal discovery, causal representation learning, and counterfactual image generation.
-
-I have submitted a first-author manuscript to *Neurocomputing*.
-
-## Languages and Tools
-
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="38" alt="Python"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="38" alt="FastAPI"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="38" alt="PostgreSQL"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="38" alt="SQLite"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="38" alt="Vue"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="38" alt="TypeScript"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="38" alt="Rust"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="38" alt="Docker"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="38" alt="PyTorch"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="38" alt="Git"/>
-</p>
-
-## Contact
-
-- GitHub: [Air000000](https://github.com/Air000000)
-- Email: 1113476369@qq.com
+First-author manuscript submitted to *Neurocomputing*.
