@@ -2,7 +2,7 @@
 
 # 李宗宽 / Air
 
-**AI Agent & LLM Application Engineer · M.S. Candidate**
+**AI Agent & LLM Application Engineer · Master's Candidate in Communication Engineering**
 
 Building controllable, recoverable, and evaluable AI Agent systems.  
 Focused on **Agent Runtime / Harness, RAG evaluation, Context Engineering, and reliable backend systems**.
@@ -73,6 +73,6 @@ A leakage-controlled Agent Skill optimization and evaluation pipeline designed t
 
 ## Research
 
-M.S. candidate in Communication Engineering, researching causal structure learning for diffusion-based generative models, including causal discovery, causal representation learning, and counterfactual image generation.
+Master's candidate in Communication Engineering, researching causal structure learning for diffusion-based generative models, including causal discovery, causal representation learning, and counterfactual image generation.
 
 First-author manuscript submitted to *Neurocomputing*.
