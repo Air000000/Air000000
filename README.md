@@ -8,7 +8,7 @@
 聚焦 **Agent 运行时与 Harness、RAG 评估、上下文工程和可靠的后端系统**。
 
 <p>
-  <img src="https://img.shields.io/badge/%E6%B1%82%E8%81%8C%E6%84%8F%E5%90%91-2027%20%E5%B1%8A%E6%A0%A1%E6%8B%9B-4A78D0" alt="求职意向：2027 届校招" />
+  <img src="https://img.shields.io/badge/%E6%B1%82%E8%81%8C%E6%84%8F%E5%90%91-2027%20%E5%B1%8A%E6%A0%A1%E6%8B%9B-4A78D0" alt="求职意向：AI Agent工程师" />
   <a href="mailto:1113476369@qq.com"><img src="https://img.shields.io/badge/%E9%82%AE%E7%AE%B1-1113476369%40qq.com-2E8B57" alt="邮箱：1113476369@qq.com" /></a>
 </p>
 
